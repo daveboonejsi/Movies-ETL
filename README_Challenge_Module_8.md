@@ -18,7 +18,7 @@ Then I wrote the function which works by:
   
   4. use regular expressions formating the numeric data (like budget and box office fields)
   
-  5. defined a and pass a function to format currency fields
+  5. defined and passed a function to format currency fields
   
   6. format date fields (release date)
   
@@ -38,6 +38,17 @@ Then I wrote the function which works by:
   
   14. established a connection to the postgresSQL database and imported the newly cleaned and merged datafile (movies) into the database, first checking to see if it already exisited, and if so, replacing it with the new one.
   
+  ## Assumptions
   
+  1.  I'm assuming that there is a dedicated web source for the data that I can work into my automation to make this truly automated.
+  As is, I was given some of the files to store and load from my local machine.  This isn't 'automated' since the data are not updated on the local machine.
+  
+  2.  Assuming also that the data will be in the expected format each time I access it.  If it were to change I would need to modify the code.
+  
+  3.  Assuming the websites where I'm getting the data are actually updating the data or I would get the same output each time.
+  
+  4.  Assuming the movies website continues to rate its movies in the same way with the same metrics.
+  
+  5.  Assuming my access to the movie data is always valid (via the password).
 
     
